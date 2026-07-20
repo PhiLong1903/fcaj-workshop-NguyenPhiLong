@@ -14,8 +14,8 @@ pre: " <b> 1.10. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | -  Tiến hành triển khai phiên bản frontend tĩnh lên dịch vụ lưu trữ Amazon S3 và phân phối qua Amazon CloudFront cho project. Bị lỗi và không áp dụng được cloudfront và WAF vì lỗi xác minh tài khoản | 07/07/2026 | 09/07/2026 | Vertex IntervAI(Project name) |
-| 2 | - Làm giao diện AI Interview; bố trí camera, chat, câu hỏi hiện tại, progress 1/6, nút mic, sound, send; thêm gửi bằng Enter; hiển thị kết quả cuối phỏng vấn | 10/07/2026 | 12/07/2026 | FCAJ Workshop / Vertex IntervAI(Project name) |
+| 1 | -  Tiến hành triển khai phiên bản frontend tĩnh lên dịch vụ lưu trữ Amazon S3 và phân phối qua Amazon CloudFront cho project. Bị lỗi và không áp dụng được cloudfront và WAF vì lỗi xác minh tài khoản | 22/06/2026 | 24/06/2026 | Vertex IntervAI(Project name) |
+| 2 | - Làm giao diện AI Interview; bố trí camera, chat, câu hỏi hiện tại, progress 1/6, nút mic, sound, send; thêm gửi bằng Enter; hiển thị kết quả cuối phỏng vấn | 25/07/2026 | 26/07/2026 | FCAJ Workshop / Vertex IntervAI(Project name) |
 
 
 ### Kết quả đạt được tuần 10:

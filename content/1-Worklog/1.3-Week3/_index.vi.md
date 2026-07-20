@@ -14,8 +14,8 @@ pre: " <b> 1.3. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Hoàn thành bài lab Amazon VPC and AWS Site-to-Site VPN Workshop, nắm vững cách thiết lập mạng ảo và kết nối an toàn từ on-premises lên cloud | 05/05/2026 | 08/05/2026 | AWS S3 Documentation |
-| 2 | - Nghiên cứu về Subnet, Security Group, Network ACLs và EC2 để xây dựng kiến thức nền tảng. | 09/05/2026 | 10/05/2026 | AWS IAM Documentation |
+| 1 | - Hoàn thành bài lab Amazon VPC and AWS Site-to-Site VPN Workshop, nắm vững cách thiết lập mạng ảo và kết nối an toàn từ on-premises lên cloud | 04/05/2026 | 07/05/2026 | AWS S3 Documentation |
+| 2 | - Nghiên cứu về Subnet, Security Group, Network ACLs và EC2 để xây dựng kiến thức nền tảng. | 08/05/2026 | 09/05/2026 | AWS IAM Documentation |
 
 
 ### Kết quả đạt được tuần 3:

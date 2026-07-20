@@ -14,8 +14,8 @@ pre: " <b> 1.9. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Nghiên cứu và phân tích sâu các dịch vụ AWS nhằm đáp ứng yêu cầu kỹ thuật của dự án nhóm. Mô tả chi tiết luồng dữ liệu và mối liên kết giữa các thành phần trước khi đưa vào triển khai thực tế. | 28/06/2026 | 30/06/2026 | AWS Documentation |
-| 2 | - Hoàn thiện Dashboard; hiển thị CV score, skills, projects, suggested role, recommendation; kết nối Upload CV với Dashboard sau khi phân tích xong  | 31/06/2026 | 02/07/2026 | Vertex IntervAI(Project name) |
+| 1 | - Nghiên cứu và phân tích sâu các dịch vụ AWS nhằm đáp ứng yêu cầu kỹ thuật của dự án nhóm. Mô tả chi tiết luồng dữ liệu và mối liên kết giữa các thành phần trước khi đưa vào triển khai thực tế. | 15/06/2026 | 16/06/2026 | AWS Documentation |
+| 2 | - Hoàn thiện Dashboard; hiển thị CV score, skills, projects, suggested role, recommendation; kết nối Upload CV với Dashboard sau khi phân tích xong  | 17/06/2026 | 20/07/2026 | Vertex IntervAI(Project name) |
 
 ### Kết quả đạt được tuần 9:
 

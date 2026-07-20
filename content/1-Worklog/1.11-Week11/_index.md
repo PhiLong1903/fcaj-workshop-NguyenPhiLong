@@ -14,9 +14,9 @@ pre: " <b> 1.11. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Optimize user experience, refine responsive interface across various devices. | 15/07/2026 | 16/07/2026 | Vertex IntervAI(Project name) |
-| 2 | - Create History, Profile, and Settings pages; improve the Upload/Dashboard/Interview interface; process data by account; remove old account scores. | 17/07/2026 | 19/07/2026 | Vertex IntervAI(Project name) |
-| 3 | - Test the interface and fix minor bugs | July 20, 2026 | July 21, 2026 | Vertex IntervAI (Project name) |
+| 1 | - Optimize user experience, refine responsive interface across various devices. | 29/06/2026 | 30/06/2026 | Vertex IntervAI(Project name) |
+| 2 | - Create History, Profile, and Settings pages; improve the Upload/Dashboard/Interview interface; process data by account; remove old account scores. | 01/07/2026 | 2/07/2026 | Vertex IntervAI(Project name) |
+| 3 | - Test the interface and fix minor bugs | 03/07/2026 | 04/07/2026 | Vertex IntervAI (Project name) |
 
 ### Week 11 Achievements:
 

@@ -14,10 +14,10 @@ pre: " <b> 1.5. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Study the theory and complete the lab exercise on Amazon Relational Database Service (Amazon RDS). | 23/05/2026 | 24/05/2026 | AWS RDS Documentation |
-| 2 | - Implement the process of creating, connecting to, and managing relational database management systems in a cloud environment. | May 25, 2026 | May 25, 2026 | AWS Documentation |
-| 3 | - Learn and successfully configure automatic backup (Backup), multi-AZ deployment, and data security features. | May 26, 2026 | May 27, 2026 | AWS Documentation |
-| 4 | - Begin designing the architecture of AWS services to be applied to the team project. | May 28, 2026 | May 29, 2026 | AWS Documentation |
+| 1 | - Study the theory and complete the lab exercise on Amazon Relational Database Service (Amazon RDS). | 18/05/2026 | 19/05/2026 | AWS RDS Documentation |
+| 2 | - Implement the process of creating, connecting to, and managing relational database management systems in a cloud environment. | 20/05/2026 | 21/05/2026 | AWS Documentation |
+| 3 | - Learn and successfully configure automatic backup (Backup), multi-AZ deployment, and data security features. | 22/05/2026 | 23/05/2026 | AWS Documentation |
+| 4 | - Begin designing the architecture of AWS services to be applied to the team project. | 24/05/2026 | 24/05/2026 | AWS Documentation |
 
 ### Week 5 Achievements:
 

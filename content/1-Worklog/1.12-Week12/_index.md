@@ -14,8 +14,8 @@ pre: " <b> 1.12. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Polish the entire UI; test responsiveness; fix layout errors; prepare the frontend demo; take screenshots of the Login, Dashboard, Upload, Interview, and History pages. | 23/07/2026 | 24/07/2026 | Vertex IntervAI(Project name) |
-| 2 | - Write user and technical documentation. | 25/07/2026 | 27/07/2026 | Vertex IntervAI(Project name) |
+| 1 | - Polish the entire UI; test responsiveness; fix layout errors; prepare the frontend demo; take screenshots of the Login, Dashboard, Upload, Interview, and History pages. | 06/07/2026 | 08/07/2026 | Vertex IntervAI(Project name) |
+| 2 | - Write user and technical documentation. | 09/07/2026 | 10/07/2026 | Vertex IntervAI(Project name) |
 
 ### Week 12 Achievements:
 

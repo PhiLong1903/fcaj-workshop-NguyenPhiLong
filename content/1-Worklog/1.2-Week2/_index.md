@@ -14,9 +14,9 @@ pre: " <b> 1.2. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Study the theory and complete the lab on AWS Identity and Access Management (IAM) Access Control. | 26/04/2026 | 28/04/2026 | AWS Documentation |
-| 2 | - Practice creating, managing, and assigning permissions to Users, Groups, and Roles through Policies based on the principle of least privilege. | April 29, 2026 | May 1, 2026 | AWS Documentation |
-| 3 | - Master the mechanisms for controlling and securing cloud resources. | May 2, 2026 | May 3, 2026 | AWS Documentation |
+| 1 | - Study the theory and complete the lab on AWS Identity and Access Management (IAM) Access Control. | 27/04/2026 | 28/04/2026 | AWS Documentation |
+| 2 | - Practice creating, managing, and assigning permissions to Users, Groups, and Roles through Policies based on the principle of least privilege. | 29/04/2026 | 01/05/2026 | AWS Documentation |
+| 3 | - Master the mechanisms for controlling and securing cloud resources. | 02/05/2026 | 03/05/2026 | AWS Documentation |
 
 ### Week 2 Achievements:
 

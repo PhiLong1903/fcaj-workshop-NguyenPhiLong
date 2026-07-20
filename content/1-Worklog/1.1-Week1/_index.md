@@ -16,8 +16,8 @@ pre: " <b> 1.1. </b> "
 | --- | --- | ------------ | --------------- | -------------- |
 | 1 | - Learn an overview of the cloud computing platform and core AWS services. | 17/04/2026 | 18/04/2026 | FCAJ Workshop |
 | 2 | - Perform the registration process, set up a practice account, and configure initial basic security measures. | 19/04/2026 | April 21, 2026 | AWS Documentation |
-| 3 | - Familiarize yourself with the AWS Management Console interface. | April 22, 2026 | April 23, 2026 | AWS Documentation |
-| 4 | - Study the company's standard documentation. | April 24, 2026 | April 24, 2026 | FCAJ Workshop |
+| 3 | - Familiarize yourself with the AWS Management Console interface. | 22/04 2026 | 23/04 2026 | AWS Documentation |
+| 4 | - Study the company's standard documentation. | 24/04 2026 | 24/04 2026 | FCAJ Workshop |
 
 ### Week 1 Achievements:
 

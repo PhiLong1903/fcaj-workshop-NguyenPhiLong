@@ -14,7 +14,7 @@ pre: " <b> 1.2. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Nghiên cứu lý thuyết và hoàn thành bài lab về AWS Identity and Access Management (IAM) Access Control. | 26/04/2026 | 28/04/2026 | AWS Documentation |
+| 1 | - Nghiên cứu lý thuyết và hoàn thành bài lab về AWS Identity and Access Management (IAM) Access Control. | 27/04/2026 | 28/04/2026 | AWS Documentation |
 | 2 | - Thực hành khởi tạo, quản lý và phân quyền cho Users, Groups, Roles thông qua các Policies theo nguyên tắc đặc quyền tối thiểu (Least Privilege). | 29/04/2026 | 01/05/2026 | AWS Documentation |
 | 3 | - Nắm vững cơ chế kiểm soát và bảo mật hệ thống tài nguyên trên đám mây. | 02/05/2026 | 03/05/2026 | AWS Documentation |
 

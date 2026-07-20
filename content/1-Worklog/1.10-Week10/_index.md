@@ -14,8 +14,8 @@ pre: " <b> 1.10. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Deploy the static frontend version to Amazon S3 storage and distribute it via Amazon CloudFront for the project. Cloudfront and WAF failed to apply due to account verification errors. | 07/07/2026 | 09/07/2026 | Vertex IntervAI(Project name) |
-| 2 | - Create the AI ​​Interview interface; arrange camera, chat, current question, progress 1/6, mic button, sound, send; add send with Enter; display final interview results. | 10/07/2026 | 12/07/2026 | FCAJ Workshop / Vertex IntervAI (Project name) |
+| 1 | - Deploy the static frontend version to Amazon S3 storage and distribute it via Amazon CloudFront for the project. Cloudfront and WAF failed to apply due to account verification errors. | 22/06/2026 | 24/06/2026 | Vertex IntervAI(Project name) |
+| 2 | - Create the AI ​​Interview interface; arrange camera, chat, current question, progress 1/6, mic button, sound, send; add send with Enter; display final interview results. | 25/06/2026 | 26/06/2026 | FCAJ Workshop / Vertex IntervAI (Project name) |
 
 ### Week 10 Achievements:
 

@@ -18,9 +18,9 @@ pre: " <b> 1.4. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Focus on in-depth study and practice of lab exercises related to Amazon EC2 computing services. | August 13, 2025 | August 14, 2025 | AWS EC2 Documentation |
-| 3   | - Learn how to create and configure appropriate instance families, select AMIs, manage storage with high-capacity EBS, and set up secure Key Pairs. | August 15, 2025 | August 16, 2025 | AWS EC2 Documentation |
-| 4   | - Master the operating mechanisms, monitoring, and cost optimization strategies for virtual servers. | August 16, 2025 | August 17, 2025 | AWS Documentation |
+| 2   | - Focus on in-depth study and practice of lab exercises related to Amazon EC2 computing services. | 11/05/2025 | 12/05/2025 | AWS EC2 Documentation |
+| 3   | - Learn how to create and configure appropriate instance families, select AMIs, manage storage with high-capacity EBS, and set up secure Key Pairs. | 13/05/2025 | 14/05/2025 | AWS EC2 Documentation |
+| 4   | - Master the operating mechanisms, monitoring, and cost optimization strategies for virtual servers. | 15/05/2025 | 16/05/2025 | AWS Documentation |
 
 
 ### Week 4 Achievements:

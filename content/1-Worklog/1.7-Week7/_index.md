@@ -14,8 +14,8 @@ pre: " <b> 1.7. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Start building the team project, plan and begin designing the basic layout for the project using React.js | 10/06/2026 | 14/06/2026 | Vertex IntervAI(Project name) |
-| 2 | - Participate in the High-level Architecture design team meeting | 15/06/2026 | 16/06/2026 | FCAJ Workshop / Vertex IntervAI(Project name) |
+| 1 | - Start building the team project, plan and begin designing the basic layout for the project using React.js | 01/06/2026 | 03/06/2026 | Vertex IntervAI(Project name) |
+| 2 | - Participate in the High-level Architecture design team meeting | 04/06/2026 | 05/06/2026 | FCAJ Workshop / Vertex IntervAI(Project name) |
 
 ### Week 7 Achievements:
 

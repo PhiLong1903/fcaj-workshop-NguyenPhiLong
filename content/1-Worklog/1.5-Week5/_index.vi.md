@@ -14,10 +14,10 @@ pre: " <b> 1.5. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Nghiên cứu lý thuyết và hoàn thành bài lab về Amazon Relational Database Service (Amazon RDS). | 23/05/2026 | 24/05/2026 | AWS RDS Documentation |
-| 2 | - Thực hiện quy trình khởi tạo, kết nối và quản lý các hệ quản trị cơ sở dữ liệu quan hệ trên môi trường đám mây. | 25/05/2026 | 25/05/2026 | AWS  Documentation |
-| 3 | - Tìm hiểu và cấu hình thành công các tính năng sao lưu tự động (Backup), nâng cao tính sẵn sàng (Multi-AZ Deployment) và bảo mật dữ liệu. | 26/05/2026 | 27/05/2026 | AWS Documentation |
-| 4 | - Bắt đầu vẽ kiến trúc các service aws sẽ áp dụng cho dự án nhóm | 28/05/2026 | 29/05/2026 | AWS Documentation |
+| 1 | - Nghiên cứu lý thuyết và hoàn thành bài lab về Amazon Relational Database Service (Amazon RDS). | 18/05/2026 | 19/05/2026 | AWS RDS Documentation |
+| 2 | - Thực hiện quy trình khởi tạo, kết nối và quản lý các hệ quản trị cơ sở dữ liệu quan hệ trên môi trường đám mây. | 20/05/2026 | 21/05/2026 | AWS  Documentation |
+| 3 | - Tìm hiểu và cấu hình thành công các tính năng sao lưu tự động (Backup), nâng cao tính sẵn sàng (Multi-AZ Deployment) và bảo mật dữ liệu. | 22/05/2026 | 23/05/2026 | AWS Documentation |
+| 4 | - Bắt đầu vẽ kiến trúc các service aws sẽ áp dụng cho dự án nhóm | 24/05/2026 | 24/05/2026 | AWS Documentation |
 
 ### Kết quả đạt được tuần 5:
 

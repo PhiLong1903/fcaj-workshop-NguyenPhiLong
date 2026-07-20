@@ -14,8 +14,8 @@ pre: " <b> 1.3. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Complete the Amazon VPC and AWS Site-to-Site VPN Workshop lab, mastering how to set up a virtual network and secure connection from on-premises to the cloud | 05/05/2026 | 08/05/2026 | AWS S3 Documentation |
-| 2 | - Research on Subnets, Security Groups, Network ACLs, and EC2 to build foundational knowledge. | 09/05/2026 | 10/05/2026 | AWS IAM Documentation |
+| 1 | - Complete the Amazon VPC and AWS Site-to-Site VPN Workshop lab, mastering how to set up a virtual network and secure connection from on-premises to the cloud | 04/05/2026 | 07/05/2026 | AWS S3 Documentation |
+| 2 | - Research on Subnets, Security Groups, Network ACLs, and EC2 to build foundational knowledge. | 08/05/2026 | 09/05/2026 | AWS IAM Documentation |
 
 ### Week 3 Achievements:
 

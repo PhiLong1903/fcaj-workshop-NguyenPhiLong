@@ -14,9 +14,9 @@ pre: " <b> 1.8. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Study the theory and practice lab exercises on WAF, Amazon S3, and Amazon CloudFront to accurately build the frontend layer of the team project architecture. | 19/06/2026 | 22/06/2026 | AWS CloudFront, WAF, S3 Documentation |
-| 2 | - Learn about Serverless architecture with AWS Lambda and Amazon API Gateway to optimize backend operating costs. | 23/06/2026 | 24/06/2026 | AWS Lambda Documentation, AWS API Gateway Documentation |
-| 3 | - Completed the Login page; integrated the Cognito login button; created a drag-and-drop CV upload interface; displayed upload/analyze progress; and handled file format errors | June 25, 2026 | June 26, 2026 | Vertex IntervAI (Project name) |
+| 1 | - Study the theory and practice lab exercises on WAF, Amazon S3, and Amazon CloudFront to accurately build the frontend layer of the team project architecture. | 08/06/2026 | 09/06/2026 | AWS CloudFront, WAF, S3 Documentation |
+| 2 | - Learn about Serverless architecture with AWS Lambda and Amazon API Gateway to optimize backend operating costs. | 10/06/2026 | 11/06/2026 | AWS Lambda Documentation, AWS API Gateway Documentation |
+| 3 | - Completed the Login page; integrated the Cognito login button; created a drag-and-drop CV upload interface; displayed upload/analyze progress; and handled file format errors | 13/06/2026 | 14/06/2026 | Vertex IntervAI (Project name) |
 
 ### Week 8 Achievements:
 
