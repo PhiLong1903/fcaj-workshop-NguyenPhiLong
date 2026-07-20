@@ -6,42 +6,45 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
 > Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
 
 ### Overall Evaluation
 
 **1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+The environment here is super friendly and open. Everyone in the FCAJ team is always ready to support us wholeheartedly, even outside of working hours. The comfortable workspace helps me concentrate much better.
 
 **2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+Mentors provide very thorough guidance and patiently explain things. The admin team also assists with procedures and creates the best conditions for interns.
 
 **3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+The tasks I was assigned closely followed real-world knowledge, and I gained hands-on experience in the completely new field of cloud computing. This internship felt like it solidified my foundation while also providing invaluable practical skills.
 
 **4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+I learned many things, such as worklogging, reporting, teamwork skills, and professional communication with other interns. My mentor also shared practical work experience, helping me to better define my career path.
 
 **5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+The company culture is very positive: everyone respects each other, works seriously but still enjoys themselves. When there's an urgent project, everyone works together and supports each other regardless of position. This makes me feel like I'm part of a team, even as an intern.
 
 **6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+Working in a comfortable, cool office environment and experiencing a real workspace. Participating in experience-sharing events.
 
 ---
 
 ### Additional Questions
 - What did you find **most satisfying** during your internship?  
+The amazing teamwork and the enthusiasm and patience of the mentors who guided us from the beginning.
+
 - What do you think the company **should improve** for future interns?  
+I haven't thought of anything yet.
+
 - If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+Absolutely 100% yes! The environment here is extremely ideal for students to gain practical experience, learn quickly, and avoid negative pressure.
 
 ---
 
 ### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
+- Do you have any suggestions to improve the internship experience? 
+Currently, I think everything is going very well, and I hope to be in the office more often.
+
 - Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+Absolutely, if given the opportunity, I would love to continue participating.
