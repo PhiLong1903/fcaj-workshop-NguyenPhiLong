@@ -8,20 +8,16 @@ pre: " <b> 1.9. </b> "
 
 ### Week 9 Objectives:
 
-* Protect API with JWT Authorizer and Cognito token.
-* Deploy Lambda analyze_cv and monitor via CloudWatch.
+* Research the services that will be applied to the team project and optimize the project architecture.
+* Continue building the project.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Create JWT Authorizer for API Gateway | 28/06/2026 | 28/06/2026 | AWS API Gateway Documentation |
-| 2 | - Protect routes with Cognito token, debug CORS | 29/06/2026 | 30/06/2026 | AWS Cognito Documentation |
-| 3 | - Write Lambda analyze_cv, configure IAM for S3/DynamoDB | 01/07/2026 | 02/07/2026 | AWS Lambda Documentation |
-| 4 | - Check CloudWatch Logs | 03/07/2026 | 04/07/2026 | AWS CloudWatch Documentation |
-| 5 | - Verify dashboard connection with backend | 06/07/2026 | 06/07/2026 | FCAJ Workshop / Vertex IntervAI |
+| 1 | - Conduct in-depth research and analysis of AWS services to meet the technical requirements of the team project. Describe in detail the data flow and the relationships between components before actual implementation. | 28/06/2026 | 30/06/2026 | AWS Documentation |
+| 2 | - Complete the Dashboard; display CV score, skills, projects, suggested roles, recommendations; connect CV upload to the Dashboard after analysis is complete. | 31/06/2026 | 02/07/2026 | Vertex IntervAI (Project name) |
 
 ### Week 9 Achievements:
 
-* CV analysis backend is operational.
-* Dashboard connects smoothly.
-* API security is stable.
+* Have basic knowledge of the services applied in the group project
+* Completed some functionalities of the group project.

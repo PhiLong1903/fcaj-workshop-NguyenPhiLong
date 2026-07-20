@@ -8,20 +8,15 @@ pre: " <b> 1.12. </b> "
 
 ### Week 12 Objectives:
 
-* Complete Vertex IntervAI MVP and prepare demo.
-* Consolidate deploy docs, verify security and full system QA.
+* Complete and retest the project.
+* Write documentation and prepare for the final demo.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Review IAM, CORS, CodePipeline (if applicable) | 23/07/2026 | 23/07/2026 | FCAJ Workshop / Vertex IntervAI |
-| 2 | - Consolidate deploy guide & architecture diagram | 24/07/2026 | 25/07/2026 | FCAJ Workshop / Vertex IntervAI |
-| 3 | - Prepare demo checklist & worklog | 26/07/2026 | 27/07/2026 | FCAJ Workshop / Vertex IntervAI |
-| 4 | - Support full system QA | 28/07/2026 | 29/07/2026 | FCAJ Workshop / Vertex IntervAI |
-| 5 | - Finalize MVP and confirm deployment readiness | 30/07/2026 | 30/07/2026 | FCAJ Workshop / Vertex IntervAI |
+| 1 | - Polish the entire UI; test responsiveness; fix layout errors; prepare the frontend demo; take screenshots of the Login, Dashboard, Upload, Interview, and History pages. | 23/07/2026 | 24/07/2026 | Vertex IntervAI(Project name) |
+| 2 | - Write user and technical documentation. | 25/07/2026 | 27/07/2026 | Vertex IntervAI(Project name) |
 
 ### Week 12 Achievements:
 
-* Completed Vertex IntervAI MVP.
-* System is deployment-ready.
-* Gained comprehensive hands-on AWS Serverless experience.
+* (Updated after completion)

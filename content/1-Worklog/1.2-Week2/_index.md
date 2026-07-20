@@ -14,16 +14,14 @@ pre: " <b> 1.2. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | ------------ | --------------- | -------------- |
-| 1 | - Learn Virtual Private Cloud (VPC) and AWS network architecture <br> - Distinguish Security Groups and Network ACLs | 26/04/2026 | 26/04/2026 | AWS VPC Documentation |
-| 2 | - Practice creating VPC and configuring public/private subnets | 27/04/2026 | 28/04/2026 | AWS VPC Documentation |
-| 3 | - Set up Internet Gateway and Route Table | 29/04/2026 | 30/04/2026 | AWS VPC Documentation |
-| 4 | - Create EC2 instance and verify SSH connection | 01/05/2026 | 02/05/2026 | AWS VPC Documentation |
-| 5 | - Explore system management/monitoring tools <br> - Create and complete personal LinkedIn profile | 04/05/2026 | 04/05/2026 | AWS VPC Documentation |
+| 1 | - Study the theory and complete the lab on AWS Identity and Access Management (IAM) Access Control. | 26/04/2026 | 28/04/2026 | AWS Documentation |
+| 2 | - Practice creating, managing, and assigning permissions to Users, Groups, and Roles through Policies based on the principle of least privilege. | April 29, 2026 | May 1, 2026 | AWS Documentation |
+| 3 | - Master the mechanisms for controlling and securing cloud resources. | May 2, 2026 | May 3, 2026 | AWS Documentation |
 
 ### Week 2 Achievements:
 
-* Understood basic network design in AWS.
-* Deployed a simple cloud environment.
-* Successfully connected to and used EC2 instances.
-* Grasped basic security mechanisms in AWS.
-* Completed LinkedIn profile for learning and career purposes.
+* Understand AWS Identity and IAM theory.
+* Practice lab exercises related to AWS Identity and IAM.
+* Understand the basic knowledge of User, Group, and Role functions through Policies.
+* Understand basic security mechanisms in AWS.
+* Understand basic account security mechanisms.
