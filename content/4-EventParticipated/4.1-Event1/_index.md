@@ -6,102 +6,81 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
 # Summary Report: “GenAI-powered App-DB Modernization workshop”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- To convey systems thinking & DevOps culture
+- To remove psychological barriers & unleash potential
+- To optimize learning & Cloud practice
+- To promote a hands-on spirit
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **ran Minh Quan** – Intern
+- **Tran Huu Nghia** – Intern
+- **The Baller** – Intern
+- **Pham Quang Thai** – Intern
+- **Nguyen Thi Quynh Nhu** – Intern
+- **Khac Uy** – Intern
+- **Huynh Thai Linh** – Intern
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### The Combination of Mindset, Technology, and People:
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Presentations not only focus on technical tools but also emphasize the importance of psychology and workflow.
 
-#### Transitioning to modern application architecture – Microservices
+#### Addressing the Root Cause of the Problem:
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+Simply dealing with superficial symptoms is insufficient; the underlying causes must be understood, whether in project management (the DevOps iceberg model) or in personal development (the iceberg of procrastination). 
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Optimizing Cloud Learning and Practice:
 
-#### Domain-Driven Design (DDD)
+- Applying solutions like AWS Cloud Quest and the Floci simulator makes AWS learning safe and cost-effective.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### The "Build Fast, Fail Fast" Spirit:
 
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- Daring to confront fear, continuously experimenting, and deploying quickly (through high-pressure environments like Hackathons) is the best way to complete a real-world product.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Psychology: Breaking the Barrier and Building Confidence
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- 70-80% of procrastination stems from difficulties in managing emotions (such as fear of not being good enough, fear of being judged, fear of failure), not laziness. 
+- Confidence is not innate, but built through action; confidence is the bridge to developing technical skills.
+- Psychological barriers can be overcome using the "5-Minute Rule" (just start working for 5 minutes, and momentum will build) or the "5-Second Rule" (count down 5-4-3-2-1 to act immediately).
 
-#### Technical Architecture
+#### DevOps Culture & Project Management
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Issues like missed deadlines, production bugs, or burnout are just the tip of the iceberg; The underlying issues are a lack of communication, siloed teams, manual processes, and avoidance of responsibility.
+- The core of DevOps is the combination of People, Processes, and Technology.
+- You can automate deployment tools, but you cannot automate trust, communication, or accountability.
 
-#### Modernization Strategy
+#### Cloud Technology & Hackathon Practice
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- New AWS learners often worry about unexpected billing when they forget to delete resources.
+- The optimal solution is to combine hands-on learning through games (AWS Cloud Quest) and testing local architecture using the open-source Floci – a lightweight and faster AWS emulator than LocalStack.
+- The most powerful ideas stem from solving real-world problems (e.g., the SynthHunter system distinguishes between AI and human voices to combat fraud, or the Vortex application supports the recruitment process).
+- Accepting imperfection and continuously experimenting with different approaches will yield outstanding results in a short time.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Improve team workflows:** Adopt a culture of shared responsibility, eliminate blame-shifting, and establish fast feedback loops to detect risks early.
+- **Self-management:** Specifically name your fears instead of admitting laziness. Apply the "5-Minute Rule" whenever facing a difficult task to overcome initial inertia.
+- **Enhance expertise and presence:** Always prepare thoroughly before presentations to create clarity and confidence. Don't forget to acknowledge small daily victories to build confidence.
+- **Optimize development (R&D):** Integrate Floci into your local environment to test AWS architecture without incurring costs.
+- **"Go Build" Philosophy":** Maintain a spirit of rapid deployment, receive feedback, and fix bugs early instead of waiting for the system to be perfect. Organize or participate in internal Hackathon events to stimulate creativity and break through personal limitations.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Participating in the **Meetup on May 30th** workshop was a very beneficial experience, giving me a comprehensive view of events that harmoniously connect technology, workflows, and human psychology; tools cannot automate "trust" or "responsibility" and procrastination.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
+#### Practical Technical Experience
+- Familiarized myself with safe and inexpensive cloud computing approaches, such as learning through the AWS Cloud Quest platform.
+- Introduced to and experienced the ultra-lightweight local testing mindset through the open-source tool Floci. Simulating the AWS environment on a personal machine with high speed and very little RAM is a very useful practical technique.
+- Gaining a realistic view of the high-pressure environment of Hackathon competitions, thereby understanding how to...
 #### Hands-on technical exposure
 - Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
 - Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
@@ -112,13 +91,13 @@ Attending the **“GenAI-powered App-DB Modernization”** workshop was extremel
 - Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
 
 #### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- The event provided an ideal environment for exchanging ideas on transparent work culture and problem-solving thinking from the root.
+- An opportunity to learn more about the "Shared Responsibility" culture, emphasizing stopping blame and focusing on creating a rapid feedback loop.
 
 #### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- **The Big Picture:** The event harmoniously connected technology, workflows, and human psychology.
+- **The Core of DevOps:** Lies in **People – Technology Processes**; tools cannot automate "trust" or "accountability".
+- **Psychological Perspective:** 70–80% of procrastination stems from fear (fear of failure, fear of judgment) rather than laziness.
 
 #### Some event photos
 *Add your event photos here*  
