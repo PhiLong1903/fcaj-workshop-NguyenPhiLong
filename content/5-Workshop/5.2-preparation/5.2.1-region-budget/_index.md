@@ -19,7 +19,7 @@ Using one Region makes it easier for Lambda to call S3, DynamoDB, API Gateway, B
 #### Create AWS Budget
 
 1. Open **Billing and Cost Management**.
-![Cognito flow](/images/service-image/billing521.png)
+![Cognito flow](/static/images/service-image/billing521.png)
 2. Choose **Budgets** -> **Create budget**.
 
 3. Select **Cost budget**.
@@ -27,7 +27,7 @@ Using one Region makes it easier for Lambda to call S3, DynamoDB, API Gateway, B
 4. Set a monthly budget, for example 10 USD.
 
 5. Add email alerts at 50%, 80%, and 100%.521.png
-![Cognito flow](/images/service-image/521.png)
+![Cognito flow](/static/images/service-image/521.png)
 #### Cost-sensitive services
 
 | Service | Reason |

@@ -10,7 +10,7 @@ pre: " <b> 5.1. </b> "
 
 Đồ án hướng đến việc xây dựng hệ thống hỗ trợ luyện phỏng vấn thông minh dựa trên CV cá nhân. Hệ thống sử dụng các dịch vụ AWS Serverless kết hợp với AI để phân tích CV, tạo bộ câu hỏi phỏng vấn theo vai trò, hỗ trợ trả lời bằng văn bản hoặc giọng nói, đánh giá câu trả lời và lưu lại lịch sử luyện tập. Qua đó, người dùng có thể cải thiện kỹ năng phỏng vấn, nhận biết điểm mạnh, điểm yếu và chuẩn bị tốt hơn cho quá trình tuyển dụng.
 
-![Cognito flow](/images/service-image/bieudo.jpeg)
+![Cognito flow](/static/images/service-image/bieudo.jpeg)
 
 #### Các chức năng chính
 
