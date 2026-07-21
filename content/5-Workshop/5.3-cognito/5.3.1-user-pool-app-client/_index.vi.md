@@ -9,28 +9,28 @@ pre: " <b> 5.3.1. </b> "
 #### Tạo User Pool
 
 1. Vào **Amazon Cognito** -> **User pools**.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/1_531.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1_531.png)
 2. Chọn **Create user pool**.
 
 3. Ở phần Define your application, chọn **Traditional web application**.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/2_531.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/2_531.png)
 4. Bật các thuộc tính cần dùng:
    * email
    * name`
    * phone_number
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/3_531.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/3_531.png)
 
 5. Chọn gửi mã xác nhận qua email.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/2_531.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/2_531.png)
 
 6. Tạo User Pool.
 
 #### Tạo App Client
 
 1. Trong User Pool, mở **App clients**.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/4_531.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/4_531.png)
 2. Chọn **Create app client**.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/5.531.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/5.531.png)
 3. Chọn app type cho web application.
 
 4. Không bật client secret nếu frontend là SPA React.

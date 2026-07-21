@@ -10,7 +10,7 @@ pre: " <b> 5.7. </b> "
 
 API Gateway tạo endpoint HTTPS để frontend gọi Lambda backend. Đây là lớp kết nối giữa React app và các service xử lý phía AWS.
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.7.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/5.7.png)
 
 #### Routes tổng quan
 

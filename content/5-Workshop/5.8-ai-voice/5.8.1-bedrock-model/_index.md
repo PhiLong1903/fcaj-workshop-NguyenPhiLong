@@ -9,7 +9,7 @@ pre: " <b> 5.8.1. </b> "
 #### Enable model access
 
 1. Open **Amazon Bedrock**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1.581.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1.581.png)
 2. Select the correct Region.
 3. Open **Model access**.
 4. Request or enable Nova Lite if available for the account.

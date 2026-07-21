@@ -9,9 +9,9 @@ pre: " <b> 5.3.2. </b> "
 #### Configure Hosted UI
 
 1. Open the created App Client.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/1_532.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1_532.png)
 2. Open **Login pages**, **Hosted UI**, or **Managed login**.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/2_532.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/2_532.png)
 3. Add callback URLs:
 
 ```text

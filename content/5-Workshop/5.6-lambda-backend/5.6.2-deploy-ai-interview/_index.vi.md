@@ -14,10 +14,10 @@ pre: " <b> 5.6.2. </b> "
 ```text
 backend/analyze_cv/lambda_function.py
 ```
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1.562.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1.562.png)
 3. Thêm biến môi trường:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2.562.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/2.562.png)
 
 4. Thêm layer đọc PDF nếu cần:
 
@@ -30,19 +30,19 @@ backend/analyze_cv/analyze_cv_pypdf_layer.zip
 ```text
 backend/create_interview/lambda_function.py
 ```
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/3.562.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/3.562.png)
 Biến môi trường:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/4.562.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/4.562.png)
 
 #### Deploy `submit_answer`
 
 ```text
 backend/submit_answer/lambda_function.py
 ```
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.562.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/5.562.png)
 Biến môi trường:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/6.562.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/6.562.png)
 
 IAM của các Lambda này cần `bedrock:InvokeModel` và quyền đọc/ghi DynamoDB tương ứng.

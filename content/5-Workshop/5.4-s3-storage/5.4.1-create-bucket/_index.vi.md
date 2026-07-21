@@ -9,7 +9,7 @@ pre: " <b> 5.4.1. </b> "
 #### Các bước tạo bucket
 
 1. Vào **Amazon S3** -> **Create bucket**.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/1_541.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1_541.png)
 2. Đặt tên bucket duy nhất, ví dụ:
 
 ```text
@@ -18,7 +18,7 @@ talent-graph-ai-storage-huydat
 
 3. Chọn region giống Lambda.
 4. Bật **Block all public access**.
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/2_541.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/2_541.png)
 5. Có thể bật versioning trong giai đoạn test.
 6. Tạo bucket.
 

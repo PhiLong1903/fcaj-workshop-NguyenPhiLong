@@ -34,13 +34,13 @@ Allowed methods:
 GET,POST,OPTIONS
 ```
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.572.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/5.572.png)
 Allowed headers:
 
 ```text
 content-type,authorization
 ```
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.572.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/5.572.png)
 
 #### Error checks
 

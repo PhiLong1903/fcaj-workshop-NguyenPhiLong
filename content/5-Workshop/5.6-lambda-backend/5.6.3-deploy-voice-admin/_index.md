@@ -12,10 +12,10 @@ pre: " <b> 5.6.3. </b> "
 backend/polly_speech/lambda_function.py
 ```
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1.563.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1.563.png)
 Environment variables:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2.563.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/2.563.png)
 
 IAM needs `polly:SynthesizeSpeech`, `s3:PutObject`.
 
@@ -24,10 +24,10 @@ IAM needs `polly:SynthesizeSpeech`, `s3:PutObject`.
 ```text
 backend/transcribe_audio/lambda_function.py
 ```
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/3.563.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/3.563.png)
 Environment variables:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/4.563.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/4.563.png)
 
 IAM needs `transcribe:StartTranscriptionJob`, `transcribe:GetTranscriptionJob`, `s3:PutObject`, `s3:GetObject`.
 
@@ -36,5 +36,5 @@ IAM needs `transcribe:StartTranscriptionJob`, `transcribe:GetTranscriptionJob`, 
 ```text
 backend/admin_api/lambda_function.py
 ```
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.563.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/5.563.png)
 Admin API needs matching read/write permissions on `Users`, `CVs`, and `Interviews`. If it blocks users with Cognito, the Lambda role also needs permissions such as `cognito-idp:AdminDisableUser` and `cognito-idp:AdminEnableUser`.

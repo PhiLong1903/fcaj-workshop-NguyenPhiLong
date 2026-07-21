@@ -9,11 +9,11 @@ pre: " <b> 5.7.1. </b> "
 #### Các bước tạo API
 
 1. Vào **Amazon API Gateway**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1.571.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1.571.png)
 2. Chọn **Create API**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1.571.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1.571.png)
 3. Chọn **HTTP API**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2.671.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/2.671.png)
 4. Tạo integration đến từng Lambda.
 5. Tạo route theo bảng ở mục `5.7`.
 6. Tạo stage, ví dụ:

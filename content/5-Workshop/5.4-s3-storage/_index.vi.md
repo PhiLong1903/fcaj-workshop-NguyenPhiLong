@@ -10,7 +10,7 @@ pre: " <b> 5.4. </b> "
 
 Amazon S3 lưu các file không phù hợp để lưu trực tiếp trong database: CV, audio câu hỏi, audio câu trả lời và transcript.
 
-![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/5_4.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/5_4.png)
 
 #### Cấu trúc object
 

@@ -9,11 +9,11 @@ pre: " <b> 5.7.1. </b> "
 #### Create API
 
 1. Open **Amazon API Gateway**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1.571.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1.571.png)
 2. Choose **Create API**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1.571.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1.571.png)
 3. Choose **HTTP API**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2.671.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/2.671.png)
 4. Create integrations to each Lambda.
 5. Create routes from the table in section `5.7`.
 6. Create a stage, for example:

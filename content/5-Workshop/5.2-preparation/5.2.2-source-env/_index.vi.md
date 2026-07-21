@@ -17,15 +17,15 @@ backend/
 
 Trong backend có các Lambda:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/lampda522.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/lampda522.png)
 
 #### Biến môi trường frontend
 
 File frontend/.env cần có các endpoint API và Cognito config:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/moitruong522.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/moitruong522.png)
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/apcliaent.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/apcliaent.png)
 #### Kiểm tra local
 
 ```bash

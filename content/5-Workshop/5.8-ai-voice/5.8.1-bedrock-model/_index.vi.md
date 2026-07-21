@@ -9,7 +9,7 @@ pre: " <b> 5.8.1. </b> "
 #### Cấp quyền model
 
 1. Vào **Amazon Bedrock**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1.581.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/1.581.png)
 2. Chọn đúng region.
 3. Mở **Model access**.
 4. Request hoặc enable model Nova Lite nếu tài khoản hỗ trợ.
