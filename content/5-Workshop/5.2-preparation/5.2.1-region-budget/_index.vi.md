@@ -19,7 +19,7 @@ Khi dùng cùng region, Lambda sẽ dễ gọi S3, DynamoDB, API Gateway, Bedroc
 #### Tạo AWS Budget
 
 1. Vào **Billing and Cost Management**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/billing521.png)
+![Cognito flow](/images/service-image/billing521.png)
 2. Chọn **Budgets** -> **Create budget**.
 
 3. Chọn **Cost budget**.
@@ -27,7 +27,7 @@ Khi dùng cùng region, Lambda sẽ dễ gọi S3, DynamoDB, API Gateway, Bedroc
 4. Đặt ngân sách tháng, ví dụ 10 USD.
 
 5. Thêm email nhận cảnh báo ở mức 50%, 80% và 100%.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/521.png)
+![Cognito flow](/images/service-image/521.png)
 #### Dịch vụ cần chú ý chi phí
 
 | Service | Lý do |
