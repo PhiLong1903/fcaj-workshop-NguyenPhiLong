@@ -19,7 +19,7 @@ Khi dùng cùng region, Lambda sẽ dễ gọi S3, DynamoDB, API Gateway, Bedroc
 #### Tạo AWS Budget
 
 1. Vào **Billing and Cost Management**.
-![Cognito flow](static/images/service-image/billing521.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/billing521.png)
 2. Chọn **Budgets** -> **Create budget**.
 
 3. Chọn **Cost budget**.
