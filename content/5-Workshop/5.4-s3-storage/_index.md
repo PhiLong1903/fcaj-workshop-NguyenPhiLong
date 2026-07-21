@@ -10,7 +10,7 @@ pre: " <b> 5.4. </b> "
 
 Amazon S3 stores files that should not be stored directly in the database: CVs, question audio, answer audio, and transcripts.
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5_4.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/5_4.png)
 
 #### Object structure
 

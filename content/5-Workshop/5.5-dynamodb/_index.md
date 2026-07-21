@@ -11,7 +11,7 @@ pre: " <b> 5.5. </b> "
 DynamoDB is the main database of the system, storing user profiles, CV metadata, and interview data.
 
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.5.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/5.5.png)
 
 #### Tables to deploy
 

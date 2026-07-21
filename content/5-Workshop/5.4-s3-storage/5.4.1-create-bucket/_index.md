@@ -10,7 +10,7 @@ pre: " <b> 5.4.1. </b> "
 
 1. Open **Amazon S3** -> **Create bucket**
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1_541.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/1_541.png)
 2. Use a unique bucket name, for example:
 
 ```text
@@ -19,7 +19,7 @@ talent-graph-ai-storage-huydat
 
 3. Choose the same Region as Lambda.
 4. Enable **Block all public access**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2_541.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/5-Workshop/service-image/2_541.png)
 
 5. Versioning can be enabled during testing.
 6. Create the bucket.
