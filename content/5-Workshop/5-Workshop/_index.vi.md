@@ -1,31 +1,28 @@
 ---
 title: "Workshop"
-date: 2026-07-21
+date: 2024-01-01
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Workshop triển khai Vertex-IntervAI
+# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
 
-Workshop này hướng dẫn triển khai hệ thống **Vertex-IntervAI / Talent Graph AI** lên AWS theo từng service. Cấu trúc được chia giống một workshop triển khai thật: chuẩn bị môi trường, triển khai từng dịch vụ AWS, kết nối frontend, kiểm thử và dọn dẹp tài nguyên.
+#### Tổng quan
 
+**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
 
+Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+
+Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
++ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
++ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
 
 #### Nội dung
 
-1. [Giới thiệu](5.1-overview/)
-2. [Chuẩn bị môi trường](5.2-preparation/)
-3. [Triển khai Amazon Cognito](5.3-cognito/)
-4. [Triển khai Amazon S3](5.4-s3-storage/)
-5. [Triển khai Amazon DynamoDB](5.5-dynamodb/)
-6. [Triển khai AWS Lambda](5.6-lambda-backend/)
-7. [Triển khai Amazon API Gateway](5.7-api-gateway/)
-8. [Triển khai AI và Voice services](5.8-ai-voice/)
-9. [Triển khai Frontend](5.9-frontend/)
-10. [Kiểm thử hệ thống](5.10-testing/)
-11. [Dọn dẹp tài nguyên](5.11-cleanup/)
-
-#### Kết quả đạt được
-
-Sau workshop, người dùng có thể truy cập website thật, đăng nhập bằng Cognito, upload CV, phân tích CV bằng AI, tạo phiên phỏng vấn, trả lời câu hỏi bằng text/microphone, xem kết quả và quản trị dữ liệu qua Admin Console.
+1. [Tổng quan về workshop](5.1-Workshop-overview/)
+2. [Chuẩn bị](5.2-Prerequiste/)
+3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
+4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
+5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
+6. [Dọn dẹp tài nguyên](5.6-Cleanup/)

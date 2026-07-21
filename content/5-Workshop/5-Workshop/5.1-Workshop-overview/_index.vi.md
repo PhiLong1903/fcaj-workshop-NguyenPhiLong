@@ -1,50 +1,19 @@
 ---
-title: "Giới thiệu"
-date: 2026-07-21
-weight: 1
-chapter: false
-pre: " <b> 5.1. </b> "
+title : "Giới thiệu"
+date : 2024-01-01 
+weight : 1
+chapter : false
+pre : " <b> 5.1. </b> "
 ---
 
-#### Mục tiêu
+#### Giới thiệu về VPC Endpoint
 
-Đồ án hướng đến việc xây dựng hệ thống hỗ trợ luyện phỏng vấn thông minh dựa trên CV cá nhân. Hệ thống sử dụng các dịch vụ AWS Serverless kết hợp với AI để phân tích CV, tạo bộ câu hỏi phỏng vấn theo vai trò, hỗ trợ trả lời bằng văn bản hoặc giọng nói, đánh giá câu trả lời và lưu lại lịch sử luyện tập. Qua đó, người dùng có thể cải thiện kỹ năng phỏng vấn, nhận biết điểm mạnh, điểm yếu và chuẩn bị tốt hơn cho quá trình tuyển dụng.
++ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
++ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/bieudo.jpeg)
+#### Tổng quan về workshop
+Trong workshop này, bạn sẽ sử dụng hai VPC.
++ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
++ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
 
-#### Các chức năng chính
-
-| Chức năng | Mô tả |
-| --- | --- |
-| Đăng nhập | Người dùng đăng ký/đăng nhập bằng Amazon Cognito Hosted UI. |
-| Upload CV | Frontend gửi CV dạng base64 đến Lambda, Lambda lưu file vào S3. |
-| Phân tích CV | Lambda đọc CV từ S3 và phân tích bằng Amazon Bedrock Nova Lite hoặc fallback logic. |
-| AI Interview | Hệ thống tạo câu hỏi theo CV/role, số câu hỏi có thể chọn từ frontend. |
-| Chấm điểm | Lambda nhận câu trả lời, dùng AI/fallback để trả điểm, feedback và gợi ý cải thiện. |
-| Voice | Polly tạo audio câu hỏi, Transcribe chuyển audio câu trả lời thành text. |
-| History/Result | Người dùng xem lịch sử CV, lịch sử phỏng vấn, final score và lời khuyên. |
-| Admin Console | Admin quản lý users, CVs, interviews, review queue, audit log và export CSV. |
-
-#### Dịch vụ AWS tích hợp
-
-* Amazon Cognito
-* Amazon S3
-* Amazon DynamoDB
-* AWS Lambda
-* Amazon API Gateway
-* Amazon Bedrock
-* Amazon Polly
-* Amazon Transcribe
-* Amazon CloudWatch
-* AWS Amplify Hosting
-
-#### Luồng triển khai
-
-1. Chuẩn bị region, budget, source code và biến môi trường.
-2. Tạo Cognito để xác thực người dùng.
-3. Tạo S3 và DynamoDB làm storage/database.
-4. Deploy Lambda backend.
-5. Tạo API Gateway routes và JWT Authorizer.
-6. Bật Bedrock/Polly/Transcribe cho AI và voice.
-7. Deploy frontend bằng Amplify Hosting.
-8. Kiểm thử toàn bộ user flow và admin flow.
+![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
