@@ -27,7 +27,7 @@ Khi dùng cùng region, Lambda sẽ dễ gọi S3, DynamoDB, API Gateway, Bedroc
 4. Đặt ngân sách tháng, ví dụ 10 USD.
 
 5. Thêm email nhận cảnh báo ở mức 50%, 80% và 100%.
-![Cognito flow](static/images/service-image/521.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/521.png)
 #### Dịch vụ cần chú ý chi phí
 
 | Service | Lý do |

@@ -27,7 +27,7 @@ Using one Region makes it easier for Lambda to call S3, DynamoDB, API Gateway, B
 4. Set a monthly budget, for example 10 USD.
 
 5. Add email alerts at 50%, 80%, and 100%.521.png
-![Cognito flow](static/images/service-image/521.png)
+![Cognito flow](/fcaj-workshop-NguyenPhiLong/images/service-image/521.png)
 #### Cost-sensitive services
 
 | Service | Reason |
