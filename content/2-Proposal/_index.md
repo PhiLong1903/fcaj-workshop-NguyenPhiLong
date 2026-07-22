@@ -59,6 +59,7 @@ The project aims to build a practical AI interview practice system with the foll
 - **Amazon Transcribe** converts voice answers into text.
 - **Amazon CloudWatch Logs** stores logs and supports Lambda/API Gateway debugging.
 - **AWS Amplify Hosting** builds and deploys the React + Vite frontend.
+- **Amazon Step Function** Sync API Lambdas và Async Orchestration & AI Tasks
 
 ### 6. Technical Implementation
 

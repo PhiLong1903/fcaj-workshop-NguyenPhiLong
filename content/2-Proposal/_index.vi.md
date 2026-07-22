@@ -59,6 +59,7 @@ Sử dụng Amazon Bedrock để phân tích CV, tạo câu hỏi phỏng vấn 
 - **Amazon Transcribe** Chuyển câu trả lời bằng giọng nói thành văn bản.
 - **Amazon CloudWatch Logs** 	Lưu log và hỗ trợ debug Lambda/API Gateway.
 - **AWS Amplify Hosting** Build và triển khai frontend React + Vite.
+- **Amazon Step Function** Xử lý đồng bộ API Lambdas và bất đồng bộ Orchestration & AI Tasks
 
 ### 6. Triển khai kỹ thuật
 
