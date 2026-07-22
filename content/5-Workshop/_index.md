@@ -25,6 +25,7 @@ This workshop explains how to deploy **Vertex-IntervAI / Talent Graph AI** on AW
 9. [Deploy Frontend](5.9-frontend/)
 10. [System testing](5.10-testing/)
 11. [Clean up resources](5.11-cleanup/)
+12. [Demo] (5.12-Demo/)
 
 #### Expected result
 
