@@ -1,5 +1,5 @@
 ---
-title: "Báo cáo thực tập"
+title: "Thông tin thức tập sinh"
 date: 2024-01-01
 weight: 1
 chapter: false
