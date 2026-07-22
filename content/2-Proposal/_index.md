@@ -11,112 +11,171 @@ pre: " <b> 2. </b> "
 
 ### 1. Executive Summary
 
-Vertex-IntervAI, also named Talent Graph AI, is a web application that helps candidates prepare for interviews from their own CV. A user uploads a CV, the system stores it securely, analyzes it with AI, creates interview questions based on the CV and selected role, accepts typed or voice answers, evaluates each answer, and returns a result with scores, feedback, and improvement advice.
+Vertex-IntervAI, also known as Talent Graph AI, is a web application that helps candidates practice interviews using their own CV. Users upload a CV, the system stores it securely, analyzes its content with AI, creates interview questions based on the CV and selected role, accepts text or voice answers, scores each answer, and returns results with scores, feedback, and improvement advice.
 
 The project uses a React + Vite frontend and an AWS Serverless backend. The backend is built with API Gateway, AWS Lambda, Amazon S3, Amazon DynamoDB, Amazon Cognito, Amazon Bedrock, Amazon Polly, Amazon Transcribe, Amazon CloudWatch, and Amazon SES for future feedback email.
 
-The current implementation already covers the main candidate workflow: login gate, dashboard, CV upload, CV analysis, role-based AI interview, answer scoring, result page, history page, profile page, settings, language/theme switching, and an admin console. The remaining production work is mainly authentication enforcement, IAM review, CORS verification, full voice testing, and cross-device history synchronization.
+The current project already has the main user flow: Cognito login, dashboard, CV upload, CV analysis, interview role selection, question count selection, AI interview, answer scoring, results, history, profile, settings, language and interface switching, and an admin console. The remaining work includes real JWT authentication, IAM/CORS verification, full voice-flow testing, cross-device history synchronization, and production deployment.
 
 ### 2. Problem Statement
 
-Many students and early-career candidates prepare for interviews without personalized guidance. Generic question lists are useful, but they do not adapt to a candidate's actual CV, project experience, skill gaps, or target role. Manual mock interviews also take time and are difficult to repeat consistently.
+Many students and early-career candidates prepare for interviews using generic question lists, so their practice is often not aligned with their CV, skills, projects, experience, or actual target position. Manual mock interviews are also time-consuming and difficult to repeat many times.
 
 Vertex-IntervAI solves this by turning a CV into an interview preparation flow:
 
-- Analyze the uploaded CV and extract skills, experience, education, projects, and role hints.
-- Let the candidate select an AI role such as software engineer, data analyst, AI engineer, cloud engineer, or a CV-suggested role.
-- Generate a configurable number of interview questions, with a default of 5 and a minimum of 2.
-- Support both text answers and voice interaction.
-- Score each answer and provide feedback, suggestions, and a final result.
+- Analyze the CV to extract skills, experience, education, projects, and suitable role suggestions.
+- Let candidates select an AI role such as software engineer, data analyst, AI engineer, cloud engineer, or a role suggested from the CV.
+- Generate a configurable number of questions, with a default of 5 and a minimum of 2.
+- Support both text and voice answers.
+- Score each answer and provide comments and improvement suggestions.
 - Store interview history for later review.
-- Provide an admin console for monitoring users, CVs, interviews, review queues, audit activity, CSV export, and feedback email workflows.
+- Provide an admin console to manage users, CVs, interviews, the review queue, audit logs, CSV exports, and feedback email workflows.
 
-### 3. Solution Architecture
+### 3. Project Objectives
+
+The project aims to build a practical AI interview practice system with the following objectives:
+
+- Build a complete web application for CV upload, AI interview practice, results, history, and profile management.
+- Apply an AWS Serverless architecture to reduce infrastructure administration and support flexible scaling.
+- Use Amazon Bedrock to analyze CVs, generate interview questions, and evaluate answers.
+- Support voice interview practice with Amazon Polly and Amazon Transcribe.
+- Store user information, CV metadata, interview sessions, and results in a clear data structure.
+- Provide an admin page for monitoring and managing operational data.
+- Build a step-by-step AWS deployment workshop.
+
+### 4. Solution Architecture
 
 ```mermaid
 flowchart LR
-  User["Candidate / Admin"] --> Frontend["React + Vite Frontend"]
-  Frontend --> Cognito["Amazon Cognito Hosted UI"]
-  Frontend --> APIGW["Amazon API Gateway"]
+  %% Users
+  User(("User/Admin"))
 
-  APIGW --> Upload["upload_cv Lambda"]
-  APIGW --> Analyze["analyze_cv Lambda"]
-  APIGW --> Profile["profile_api Lambda"]
-  APIGW --> CreateInterview["create_interview Lambda"]
-  APIGW --> SubmitAnswer["submit_answer Lambda"]
-  APIGW --> Voice["polly_speech / transcribe_audio Lambda"]
-  APIGW --> History["history_api Lambda"]
-  APIGW --> Admin["admin_api Lambda"]
+  %% AWS Cloud boundary
+  subgraph AWS_Cloud["AWS Cloud"]
 
-  Upload --> S3["Amazon S3 CV + voice storage"]
-  Analyze --> S3
-  Voice --> S3
+    %% Edge and authentication layer
+    subgraph Edge_Auth["Edge & Auth Layer"]
+      WAF["WAF"]
+      APIGW["API Gateway"]
+      Amplify["Amplify (S3 + CloudFront)"]
+      Cognito["Amazon Cognito"]
+    end
 
-  Analyze --> Bedrock["Amazon Bedrock Nova Lite"]
-  CreateInterview --> Bedrock
-  SubmitAnswer --> Bedrock
+    %% Observability
+    subgraph Observability["Observability"]
+      CloudWatch["CloudWatch"]
+    end
 
-  Profile --> Users["DynamoDB Users"]
-  Upload --> CVs["DynamoDB CVs"]
-  Analyze --> CVs
-  CreateInterview --> Interviews["DynamoDB Interviews"]
-  SubmitAnswer --> Interviews
-  History --> CVs
-  History --> Interviews
-  Admin --> Users
-  Admin --> CVs
-  Admin --> Interviews
+    %% Synchronous processing Lambdas
+    subgraph Sync_API["Sync API Lambdas"]
+      Lambda_UploadCV["Upload cv"]
+      Lambda_Profile["profile_api"]
+      Lambda_Admin["admin_api"]
+    end
 
-  Voice --> Polly["Amazon Polly"]
-  Voice --> Transcribe["Amazon Transcribe"]
-  Admin -. "future" .-> SES["Amazon SES"]
-  APIGW --> Logs["CloudWatch Logs"]
+    %% Asynchronous processing and AI tasks
+    subgraph Async_Tasks["Async Orchestration & AI Tasks"]
+      StepFunctions["Step functions"]
+      SQS["SQS"]
+      Lambda_SubAnswer["sub_answer"]
+      Lambda_CreateInt["create_interview"]
+      Lambda_AnalyzeCV["analyze_cv"]
+      Lambda_TransAudio["trans_audio"]
+      Lambda_PollySpeech["polly_speech"]
+    end
+
+    %% AWS managed data and AI services
+    subgraph Managed_Services["AWS Managed Data & AI Services"]
+      S3["S3 (Media)"]
+      DynamoDB["DynamoDB"]
+      Bedrock["Bedrock"]
+      Transcribe["Transcribe"]
+      Polly["Polly"]
+    end
+
+    %% IAM security foundation
+    subgraph IAM["IAM Roles (Security Foundation)"]
+      Role1["Role: APIGateway-CloudWatch"]
+      Role2["Role: Lambda-Sync-Access"]
+      Role3["Role: StepFunction-Invoke"]
+      Role4["Role: Lambda-Async-AI"]
+    end
+  end
+
+  %% --- Interaction flows ---
+
+  %% User interactions
+  User -- "1. Fetch UI" --> Amplify
+  User -- "2. Login and get token" --> Cognito
+  User -- "3. Request + JWT" --> WAF
+
+  %% Edge and authentication flow
+  WAF -- "4. Protect" --> Amplify
+  WAF -- "5. Pass" --> APIGW
+  APIGW -- "6. Validate JWT" --> Cognito
+
+  %% Logging flow
+  APIGW -- "8. Send Logs" --> CloudWatch
+
+  %% Synchronous API calls
+  APIGW -- "7a. Sync Call" --> Lambda_UploadCV
+  APIGW --> Lambda_Profile
+  APIGW --> Lambda_Admin
+
+  Lambda_UploadCV -- "PutObject" --> S3
+  Lambda_Profile -- "Read/Write" --> DynamoDB
+  Lambda_Admin -- "Read/Write" --> DynamoDB
+
+  %% Asynchronous execution
+  APIGW -- "7b. Async start exec" --> StepFunctions
+  
+  StepFunctions -- "8. On Error/Timeout" --> SQS
+  StepFunctions -- "Trigger" --> Lambda_SubAnswer
+  StepFunctions -- "Trigger" --> Lambda_CreateInt
+  StepFunctions -- "Trigger" --> Lambda_AnalyzeCV
+  StepFunctions -- "Trigger" --> Lambda_TransAudio
+  StepFunctions -- "Trigger" --> Lambda_PollySpeech
+
+  %% AI task interactions with managed services
+  Lambda_SubAnswer -- "Read/Write" --> DynamoDB
+  Lambda_CreateInt -- "Save State" --> DynamoDB
+  Lambda_AnalyzeCV -- "Invoke Model" --> Bedrock
+  Lambda_TransAudio -- "Audio to Text" --> Transcribe
+  Lambda_PollySpeech -- "Text to Audio" --> Polly
 ```
 
-### AWS Services Used
+### 5. AWS Services Used
 
-- **Amazon S3** stores uploaded CV files under `cv/{userId}/{cvId}.{extension}` and stores generated voice/question/answer/transcript assets.
-- **Amazon DynamoDB** stores structured application data in `CVs`, `Users`, and `Interviews`.
-- **AWS Lambda** runs the backend functions: `upload_cv`, `analyze_cv`, `profile_api`, `create_interview`, `submit_answer`, `polly_speech`, `transcribe_audio`, `history_api`, and `admin_api`.
-- **Amazon API Gateway** exposes REST routes for frontend services.
-- **Amazon Cognito** handles real authentication through Hosted UI, JWT tokens, and groups `user` and `admin`.
-- **Amazon Bedrock** generates CV analysis, interview questions, scoring, and feedback using Nova Lite with fallback logic.
-- **Amazon Polly** generates question audio.
-- **Amazon Transcribe** converts candidate voice answers into text.
-- **Amazon CloudWatch Logs** records backend execution logs and troubleshooting data.
-- **Amazon SES** is planned for feedback email; production sending requires SES production access.
+- **Amazon Cognito** handles registration, login, Hosted UI, JWT authentication, and user/admin authorization.
+- **Amazon DynamoDB** stores users, CV metadata, interview sessions, answers, scores, and history.
+- **Amazon S3** stores CV files, question audio, answer audio, and transcripts.
+- **AWS Lambda** runs the backend for CV upload and analysis, profiles, interview creation, scoring, voice, history, and administration.
+- **Amazon API Gateway** provides REST APIs, CORS configuration, and JWT-authorized routes.
+- **Amazon Bedrock** analyzes CVs, creates interview questions, evaluates answers, and provides improvement suggestions.
+- **Amazon Polly** converts interview questions into audio.
+- **Amazon Transcribe** converts voice answers into text.
+- **Amazon CloudWatch Logs** stores logs and supports Lambda/API Gateway debugging.
+- **AWS Amplify Hosting** builds and deploys the React + Vite frontend.
 
-### 4. Technical Implementation
+### 6. Technical Implementation
 
-#### Frontend
+The workshop is divided into stages for deploying and configuring the services:
 
-The frontend is located in `frontend/` and is built with React + Vite. It contains the main user pages:
+1. Prepare the AWS Region, budget alerts, source code, and environment variables.
+2. Create the Cognito User Pool, App Client, Hosted UI domain, callback URL, logout URL, and `user`/`admin` groups.
+3. Create S3 buckets for CVs and audio, then configure CORS and IAM permissions.
+4. Create the `Users`, `CVs`, and `Interviews` DynamoDB tables.
+5. Deploy Lambda functions for CVs, profiles, history, interviews, voice, and administration.
+6. Create API Gateway routes, connect Lambda integrations, and configure CORS and JWT authorization.
+7. Enable access to Amazon Bedrock models and connect the relevant AI Lambdas.
+8. Configure Amazon Polly and Amazon Transcribe for voice features.
+9. Configure the frontend `.env` variables and deploy React + Vite with Amplify Hosting.
+10. Test user flows, admin flows, voice, results, and history.
+11. Clean up resources after the workshop to avoid unnecessary charges.
 
-- Login landing gate with Cognito sign-in.
-- Dashboard with CV status, selected CV details, AI summary, and quick actions.
-- Upload CV page with multi-CV listing, details, analysis, and delete actions.
-- AI Interview page with role selection, question count, chat box, camera area, voice support, and interview controls.
-- Result page with final score, feedback, strengths, weaknesses, and recommendations.
-- History page with interview detail review.
-- Profile page with full name, email, phone, and avatar.
-- Settings page with compact preferences, theme toggle, language toggle, and question count.
-- Admin Console for privileged users.
+#### Current Status
 
-Frontend service files call the backend APIs:
-
-- `cvApi.js` calls upload and analyze routes.
-- `interviewApi.js` calls interview creation and answer submission routes.
-- `voiceApi.js` calls Polly and Transcribe routes.
-- `profileApi.js` calls profile routes.
-- `authService.js` is being moved from demo localStorage login to Cognito/JWT login.
-
-#### Backend
-
-The backend is located in `backend/` and uses one Lambda folder per feature. Each Lambda reads environment variables for table names, bucket names, Bedrock model configuration, and service settings. The backend stores metadata and interview attempts in DynamoDB, while large files remain in S3.
-
-#### Current Project Status
-
-| Area | Status |
+| Item | Status |
 | --- | --- |
 | CV upload to S3 | Implemented |
 | CV metadata in DynamoDB | Implemented |
@@ -124,24 +183,18 @@ The backend is located in `backend/` and uses one Lambda folder per feature. Eac
 | Profile GET/POST | Implemented |
 | Interview question generation | Implemented |
 | Answer scoring | Implemented |
-| Polly/Transcribe code path | Implemented, needs real end-to-end testing |
-| Cognito Hosted UI | Configured in progress |
-| JWT authorizer and role enforcement | Needs final API Gateway/backend verification |
-| Admin console | Implemented in frontend/backend direction |
-| DynamoDB history sync | Designed, needs full flow validation |
-| CloudFront/WAF | Postponed until AWS account verification allows required resources |
-| SES feedback email | Postponed until SES production access |
+| Answer scoring | Completed |
 
-### 5. Timeline & Milestones
+### 7. Timeline and Milestones
 
-- **Phase 1 - Core Application**: Build React pages, local demo auth, CV upload, CV analysis, interview creation, answer scoring, and localStorage fallback.
-- **Phase 2 - AWS Backend**: Connect Lambda, API Gateway, S3, DynamoDB, Bedrock, Polly, and Transcribe.
-- **Phase 3 - Authentication and Roles**: Configure Cognito User Pool, App Client, Hosted UI, callback/logout URLs, groups `user/admin`, JWT authorizer, and protected routes.
-- **Phase 4 - User Experience**: Improve dashboard CV switching, upload CV management, AI Interview UI, result page, history detail, profile, settings, theme switching, and language switching.
-- **Phase 5 - Admin and Operations**: Add admin console, admin APIs, audit log, CSV export, review queue, feedback email design, IAM least privilege, and CloudWatch troubleshooting.
-- **Phase 6 - Production Readiness**: Verify CORS, IAM, Cognito JWT claims, voice flow, multi-device history, CloudFront/WAF when the AWS account is verified, and SES production access.
+- **Phase 1 - Project initiation and architecture design**: Analyze requirements, create the React project, build the basic routing and layout, design the DynamoDB schema, prepare S3 CV storage, define the AI workflow, and create the AWS architecture checklist.
+- **Phase 2 - Login, CV upload, and storage**: Complete the login UI, integrate the Cognito Hosted UI, build drag-and-drop CV upload, write the `upload_cv` Lambda, store files in S3, store metadata in DynamoDB, and configure callback/logout URLs.
+- **Phase 3 - CV analysis and dashboard**: Complete the dashboard, write the `analyze_cv` Lambda, read CVs from S3, analyze them with Bedrock/Nova Lite, store skills/projects/experience/certificates, and protect APIs with the Cognito JWT authorizer.
+- **Phase 4 - AI interview and answer scoring**: Build the AI Interview interface, create interview sessions, generate questions based on the CV and role, store answers, score them, return feedback, suggest better answers, and calculate the total score.
+- **Phase 5 - Voice, history, profile, settings, and administration**: Build the History, Profile, and Settings pages, write `history_api` and `profile_api`, integrate Polly/Transcribe for voice, build the Admin Console, export CSV data, and prepare the feedback email workflow.
+- **Phase 6 - Testing, deployment, documentation, and demo**: Polish the UI, test responsiveness, verify API Gateway/Lambda/DynamoDB/IAM/CORS, improve prompts and scoring, compile the deployment guide, capture screenshots, complete the worklog, and prepare the demo checklist.
 
-### 6. Budget Estimation
+### 8. Budget Estimation
 
 The project is designed for a student/demo workload, so the first version should remain low cost when traffic is small. Main cost drivers are Bedrock inference, Transcribe minutes, Polly characters, S3 storage, DynamoDB read/write capacity, API Gateway requests, and Lambda invocations.
 
@@ -159,7 +212,7 @@ Cost controls:
 - Add AWS Budgets alerts.
 - Keep CloudWatch log retention reasonable.
 
-### 7. Risk Assessment
+### 9. Risk Assessment
 
 | Risk | Impact | Mitigation |
 | --- | --- | --- |
@@ -172,8 +225,6 @@ Cost controls:
 | SES sandbox | Feedback email only sends to verified recipients | Request SES production access before production email features |
 | CloudFront/WAF account limitation | Static hosting production path delayed | Use local/Vite or S3 website deployment until account verification is complete |
 
-### 8. Expected Outcomes
+### 10. Expected Outcomes
 
-The completed project will provide a working AI interview preparation platform with personalized CV analysis, role-based interview questions, typed and voice answers, scoring, feedback, results, and history. It will also demonstrate a practical AWS Serverless architecture with authentication, storage, database design, AI services, observability, and admin operations.
-
-The project can be expanded into a more complete talent platform by adding stronger analytics, recruiter-facing dashboards, team workspaces, advanced role taxonomies, richer multilingual support, and production-grade deployment through S3, CloudFront, WAF, and CI/CD.
+After completion, Vertex-IntervAI will provide a complete AI interview practice process: users can log in, upload a CV, receive AI analysis, practice interviews, answer by text or voice, view scores and feedback, and review their practice history. The workshop will also produce reusable documentation for deploying similar systems on AWS Serverless.
