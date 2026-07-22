@@ -25,7 +25,7 @@ Workshop này hướng dẫn triển khai hệ thống **Vertex-IntervAI / Talen
 9. [Triển khai Frontend](5.9-frontend/)
 10. [Kiểm thử hệ thống](5.10-testing/)
 11. [Dọn dẹp tài nguyên](5.11-cleanup/)
-12. [Demo] (5.12-Demo/)
+12. [Demo](5.12-Demo/)
 
 #### Kết quả đạt được
 
